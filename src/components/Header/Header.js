@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faSearch } from "@fortawesome/free-solid-svg-icons";
 import "./Header.styles.scss";
-import { signInWithGoogle, auth } from "../../firebase/firebase.utils";
+import { auth } from "../../firebase/firebase.utils";
 
 export default function Header({ currentUser }) {
   return (
