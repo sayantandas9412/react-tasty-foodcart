@@ -4,8 +4,7 @@
   height: 10vh;
   background: #2874f0;
   color: #fff;
-  box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.75);
-  z-index: -1;
+  box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.4);
 
   .header-logo {
     margin: auto 10px;
@@ -67,11 +66,20 @@
         }
       }
     }
-    span {
+    .cart-icon {
       position: absolute;
       top: 26px;
       right: 10%;
       cursor: pointer;
+    }
+    .cart-count {
+      position: absolute;
+      width: 25px;
+      background-color: rgb(248, 81, 81);
+      border-radius: 5px;
+      text-align: center;
+      top: 10px;
+      right: 16%;
     }
   }
 }
@@ -128,7 +136,10 @@
           display: none;
         }
       }
-      span {
+      .cart-icon {
+        display: none;
+      }
+      .cart-count {
         display: none;
       }
     }

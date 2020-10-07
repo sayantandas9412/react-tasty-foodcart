@@ -6,6 +6,7 @@ import "./Header.styles.scss";
 import { auth } from "../../firebase/firebase.utils";
 
 export default function Header({ currentUser }) {
+  const cartItemCount = 50;
   return (
     <div className="header-container">
       <div className="header-logo">
@@ -43,6 +44,9 @@ export default function Header({ currentUser }) {
           <FontAwesomeIcon icon={faShoppingCart} size="lg" />
           Cart
         </span>
+        {cartItemCount ? (
+          <span className="cart-count">{cartItemCount}</span>
+        ) : null}
       </div>
     </div>
   );
